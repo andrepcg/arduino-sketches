@@ -6,7 +6,7 @@
 EthernetClient client;
 byte mac[] = {  0x90, 0xA2, 0xDA, 0x0D, 0x96, 0xFE };
 
-char server[] = "unplu.gg";
+char server[] = "andrepcg.me";
 
 boolean lastConnected = false;
 int failedCounter = 0;
@@ -60,10 +60,10 @@ unsigned int receberRX(){
 void enviarUnplugg(unsigned int count){
   if (client.connect(server, 80)){    
     
-	if (client.connected()){	
-		Serial.println("Connecting to unplugg...");	
+	if (client.connected()){
+		Serial.println("Connecting to server...");	
 		client.print("GET \n");
-		client.print("/unplugg.php?pulsos=");
+		client.print("/arduino/unplugg.php?pulsos=");
 		client.print(count);
 		client.println();
 		
