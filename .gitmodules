@@ -1,0 +1,3 @@
+[submodule "unplu.gg-PHP-class"]
+	path = unplu.gg-PHP-class
+	url = git@github.com:andrepcg/unplu.gg-PHP-class.git
